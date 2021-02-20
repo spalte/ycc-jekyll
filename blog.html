@@ -31,7 +31,9 @@ title: Blog
 
 <h3>{{ post.title }}</h1>
 
+  <div class="itemdesc">
   {{ post.content }}
+  </div>
 
   <span class="itemnotesmall">Posted on</span>
   <span class="itemnote">{{ post.date | date: "%A, %B %-d, %Y"}}</span>
