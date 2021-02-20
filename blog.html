@@ -4,31 +4,35 @@ title: Blog
 ---
 
 <h1>
-  <img align=right src="/assets/images/logo_swiss_sailing.jpg" width="70" border="0" title="Suisse Sailing" hspace=3> 
-  <a href="https://staff-association.web.cern.ch/"><img align=right src="/assets/images/Staff_association_logo.jpg" width="70" border="0" title="CERN Staff Association" hspace=3></a>
+  <img align=right src="/assets/images/logo_swiss_sailing.jpg" width="70" border="0" title="Suisse Sailing" hspace=3>
+  <a href="https://staff-association.web.cern.ch/"><img align=right src="/assets/images/Staff_association_logo.jpg"
+      width="70" border="0" title="CERN Staff Association" hspace=3></a>
   <img align=left src="/assets/images/ycclogo.gif" height=75 border=0 alt="YCC">
-  YACHTING CLUB CERN</h1>
-  <p>
-  <br/>
-  <img src="/assets/images/motivation.jpg" width=300px align=right padding=10px margin=10px border=0 >
-  <br/>
-  <font size="3"><b>Yachting Club CERN</b>, founded in 1968, is the largest club at CERN, also open to non CERN people, counts more than 400 members sharing their passion and enthusiasm for <b>sailing</b>.
-  We own a fleet of <b>27 boats</b> of different types. We promote sailing in all forms:<b> courses of multiple levels, practice sessions, sea cruises, regattas and social activities.</b> All the sailing activities, if not differently specified, starts in <b>Versoix Port Choiseul</b>.
-  With more than 50 years of history, in 2019 we reached the record number of 460 members, under the chairmain ship of the president Luigi Gallerani. Become a member and come and sail together with us! 
+  YACHTING CLUB CERN
+</h1>
+<p>
+  <br />
+  <img src="/assets/images/motivation.jpg" width=300px align=right padding=10px margin=10px border=0>
+  <br />
+  <font size="3"><b>Yachting Club CERN</b>, founded in 1968, is the largest club at CERN, also open to non CERN people,
+    counts more than 400 members sharing their passion and enthusiasm for <b>sailing</b>.
+    We own a fleet of <b>27 boats</b> of different types. We promote sailing in all forms:<b> courses of multiple
+      levels, practice sessions, sea cruises, regattas and social activities.</b> All the sailing activities, if not
+    differently specified, starts in <b>Versoix Port Choiseul</b>.
+    With more than 50 years of history, in 2019 we reached the record number of 460 members, under the chairmain ship of
+    the president Luigi Gallerani. Become a member and come and sail together with us!
   </font>
-  </p>
-  <P>
+</p>
+<P>
   <i>Below, the YCC blog with the lastest news: </i>
-  </p>
-  
+</p>
 
-<h1>Latest Posts</h1>
+{% for post in site.posts %}
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      {{ post.excerpt }}
-    </li>
-  {% endfor %}
-</ul>
+<h3>{{ post.title }}</h1>
+
+  {{ post.content }}
+
+  <span class="itemnotesmall">Posted on</span>
+  <span class="itemnote">{{ post.date | date: "%A, %B %-d, %Y"}}</span>
+{% endfor %}
