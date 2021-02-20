@@ -1,0 +1,135 @@
+
+
+* {
+ font-family: Helvetica, Verdana, sans-serif;
+}
+
+body {font: Helvetica, Verdana, sans-serif; font-size: 100%; line-height: 1.1}
+h1 {font: 26pt Helvetica, Verdana, sans-serif; font-weight: bold; background-color: #EEEEEE; padding-left: 10px}
+h2 {font: 18pt Helvetica, Verdana, sans-serif; background-color: #035bbf; color: white; padding-left: 8px}
+h3 {font: 16pt Helvetica, Verdana, sans-serif; background-color: #EEEEEE; color: #035bbf; padding left: 5px}
+
+
+
+table{
+  border-collapse: collapse;
+  padding-left: 5px;
+  text-align: left;
+}
+
+th {
+  background-color: #035bbf;
+  color: white;
+  padding-left: 4px;
+}
+
+td {
+  padding-left: 5px;
+}
+
+A.itemtitle {
+  font: 20pt Helvetica, Verdana, sans-serif; background-color: #035bbf; color: white; padding-left: 8px;
+  /* font-size: 1.3em;
+  color: #222222;
+  text-decoration: none; */
+}
+
+A.itemtitle:visited { 
+  font: 20pt Helvetica, Verdana, sans-serif; background-color: #035bbf; color: white; padding-left: 8px;
+  /*font-size: 1.15em;
+  color: #444444;
+  text-decoration: none; */
+}
+
+/* #5588aa #1726B7 */
+A {
+  color: #5588aa;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+A:visited { 
+  color: #5588aa;
+}
+
+A:hover { 
+  color: #cc6600;
+  text-decoration: underline;
+}
+
+
+.linkmore {
+  font-weight : bold;
+}
+
+.itemdesc {
+  color: #101010;
+  padding-top: 3px; 
+  padding-bottom: 3px;
+}
+
+.itemnotesmall {
+  color: #909090;
+  font-size: 0.9em;
+}
+
+.itemnote {
+  color: #909090;
+  font-size: 0.9em;
+}
+
+.header {
+ background-color: #EEEEEE; padding-left: 10px; 
+ font-size: 0.95em;
+  color: #777777;
+  font-weight : bold;
+}
+
+
+.headercell {
+  background-color: #FCFCFC;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #aaaaaa;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #aaaaaa;
+  border-spacing: 0px;
+}
+
+.newstable {
+  background-color: #FDFDFD;
+}
+
+.newscell {
+  padding-bottom: 5px;
+}
+
+.newscellline {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #dddddd;
+  border-spacing: 0px;
+  padding-bottom: 5px;
+}
+
+.backgroudgrey {
+  color: #035BBF;
+  background-color: #EEEEEE;
+}
+.backgroudblue {
+  color: white;
+  background-color: #035BBF;
+}
+
+.blue {
+  color: #035BBF;
+}
+
+.red {
+  color: Red;
+}
+
+.footer {
+  color: #777777;
+}
