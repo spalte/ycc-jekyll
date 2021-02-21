@@ -38,3 +38,14 @@ title: Blog
   <span class="itemnotesmall">Posted on</span>
   <span class="itemnote">{{ post.date | date: "%A, %B %-d, %Y"}}</span>
 {% endfor %}
+
+<script>
+  (function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
