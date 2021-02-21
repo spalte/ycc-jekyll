@@ -8,10 +8,8 @@ title: Renew your membership for 2021
 
 No PaySlip will be sent to member this year.
 
-Please look at the "MEMBERSHIP" page,
-<br />
-**Renew your Membership paragraph or**
-<br />
+Please look at the "MEMBERSHIP" page, \
+**Renew your Membership paragraph or** \
 **[CLICK HERE TO RENEW YOUR MEMBERSHIP](https://apex-legacy.cern.ch/pls/htmldb_ycc/f?p=200:15)**
 
 
