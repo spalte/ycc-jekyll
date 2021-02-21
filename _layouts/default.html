@@ -1,13 +1,34 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="robots" content="noindex, nofollow" />
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
-  </head>
-  <body lang="en-US">
-    <img src="/assets/images/Bannersito.png" width=100%>
-    {{ content }}
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex, nofollow" />
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <style>
+    img[src*='#left'] {
+      float: left;
+      margin-bottom: 1em;
+      margin-right: 1em;
+    }
+
+    img[src*='#right'] {
+      float: right;
+      margin-bottom: 1em;
+      margin-right: 1em;
+    }
+
+    img[src*='#center'] {
+      display: block;
+      margin: auto;
+    }
+  </style>
+</head>
+
+<body lang="en-US">
+  <img src="/assets/images/Bannersito.png" width=100%>
+  {{ content }}
+</body>
+
 </html>
