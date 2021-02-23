@@ -1,16 +1,37 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
-<HTML>
+<html>
 <head>
   <link rel="shortcut icon" href="https://yachting.web.cern.ch/yachting/favicon.ico" type="image/x-icon" />
   <meta name="robots" content="noindex, nofollow" />
-  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
-  <META NAME="title" CONTENT="Yachting Club CERN - YCC">
-  <META NAME="subject" CONTENT="Yachting Club">
-  <TITLE>Yachting Club CERN</TITLE>
-</HEAD>
- <frameset cols="225,*" >
-        <frame src="menu.html" name="menu" frameborder=0>
-        <frame src="blog.html" name="right" frameborder=0>
-</frameset>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <meta name="title" content="Yachting Club CERN - YCC">
+  <meta name="subject" content="Yachting Club">
+  <title>Yachting Club CERN</title>
+  <style>
+    #box {
+        display: flex;
+        height: 100%;
+    }
 
-</HTML>
+    #menu {
+        border: none;
+        height: 100%;
+        vertical-align: top;
+        width: 225px;
+        flex: 0 0 auto;
+    }
+    #content {
+        border: none;
+        height: 100%;
+        vertical-align: top;
+        flex: 1 1 auto;
+    }
+
+    body { margin: 0}
+  </style>
+</head>
+<div id="box">
+  <iframe id="menu" name="menu" src="menu.html" width="px225"></iframe>
+  <iframe id="content" name="right" src="blog.html" ></iframe>
+</div>
+</html>
