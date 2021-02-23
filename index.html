@@ -5,6 +5,7 @@
 <html>
 <head>
   <link rel="shortcut icon" href="https://yachting.web.cern.ch/yachting/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://yachting.web.cern.ch/yachting/masterstyle.css" rel="stylesheet" type="text/css">
   <script language="JavaScript" src="https://yachting.web.cern.ch/yachting/jscode/logout.js"></script>
   
@@ -17,32 +18,75 @@
     #box {
         display: flex;
         height: 100%;
+        width: 100%;
     }
-
+    #nav {
+      flex: 0 0 30px;
+      display: none;
+    }
     #menu {
-        height: 100%;
-        vertical-align: top;
-        width: 209;
-        flex: 0 0 auto;
+        flex: 0 0 209px;
         margin: 8;
+        background :#fff;
     }
     #content {
         border: none;
-        height: 100%;
-        vertical-align: top;
-        flex: 1 1 auto;
         background-color: white;
+        flex: 1;
     }
 
     body {
       margin: 0 
     }
-  </style>
+
+  @media screen and (max-width: 600px) {
+    #box {
+      flex-direction: column;
+    }
+    #menu {
+      display: none;
+      flex: 0 0 auto;
+      position: fixed;
+      top: 22;
+      right: 0;
+      left: 0;
+      height: 480px;
+      overflow: scroll;
+      border: 3px solid gray;
+    }
+    div#menu.disclosed {
+      display: block;
+    }
+    #nav {
+      display: block;
+      padding-top: 12px;
+      padding-left: 12px;
+    }
+}
+
+</style>
 </head>
+<body>
 <div id="box">
-  <div id="menu">
+  <div id="nav">
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <div id="menu" onclick="this.className = ''" >
   {% include menu.html %}
   </div>
   <iframe id="content" name="right" src="blog.html" ></iframe>
 </div>
+<script>
+  function myFunction() {
+    var x = document.getElementById("menu");
+    if (!x.className) {
+      x.className = "disclosed";
+    } else {
+      x.className = "";
+    }
+  }
+</script>
+</body>
 </html>
