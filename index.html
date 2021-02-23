@@ -1,48 +1,16 @@
----
----
-
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
-<html>
+<HTML>
 <head>
   <link rel="shortcut icon" href="https://yachting.web.cern.ch/yachting/favicon.ico" type="image/x-icon" />
-  <link href="https://yachting.web.cern.ch/yachting/masterstyle.css" rel="stylesheet" type="text/css">
-  <script language="JavaScript" src="https://yachting.web.cern.ch/yachting/jscode/logout.js"></script>
-  
   <meta name="robots" content="noindex, nofollow" />
-  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-  <meta name="title" content="Yachting Club CERN - YCC">
-  <meta name="subject" content="Yachting Club">
-  <title>Yachting Club CERN</title>
-  <style>
-    #box {
-        display: flex;
-        height: 100%;
-    }
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+  <META NAME="title" CONTENT="Yachting Club CERN - YCC">
+  <META NAME="subject" CONTENT="Yachting Club">
+  <TITLE>Yachting Club CERN</TITLE>
+</HEAD>
+ <frameset cols="225,*" >
+        <frame src="menu.html" name="menu" frameborder=0>
+        <frame src="blog.html" name="right" frameborder=0>
+</frameset>
 
-    #menu {
-        height: 100%;
-        vertical-align: top;
-        width: 209;
-        flex: 0 0 auto;
-        margin: 8;
-    }
-    #content {
-        border: none;
-        height: 100%;
-        vertical-align: top;
-        flex: 1 1 auto;
-        background-color: white;
-    }
-
-    body {
-      margin: 0 
-    }
-  </style>
-</head>
-<div id="box">
-  <div id="menu">
-  {% include menu.html %}
-  </div>
-  <iframe id="content" name="right" src="blog.html" ></iframe>
-</div>
-</html>
+</HTML>
