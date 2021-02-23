@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://yachting.web.cern.ch/yachting/masterstyle.css" rel="stylesheet" type="text/css">
   <script language="JavaScript" src="https://yachting.web.cern.ch/yachting/jscode/logout.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow" />
   <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
   <meta name="title" content="Yachting Club CERN - YCC">
@@ -23,6 +23,8 @@
     #nav {
       flex: 0 0 30px;
       display: none;
+      padding-left: 12px;
+      padding-top: 12px;
     }
     #menu {
         flex: 0 0 209px;
@@ -39,7 +41,8 @@
       margin: 0 
     }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 600px),
+         screen and (max-height: 600px) {
     #box {
       flex-direction: column;
     }
@@ -59,8 +62,6 @@
     }
     #nav {
       display: block;
-      padding-top: 12px;
-      padding-left: 12px;
     }
 }
 
