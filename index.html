@@ -17,8 +17,8 @@
   <style>
     #box {
         display: flex;
-        height: 100vh;
         width: 100%;
+        min-height: 100vh;
     }
     #nav {
       flex: 0 0 30px;
@@ -43,6 +43,11 @@
       /* mobile viewport bug fix */
       min-height: -webkit-fill-available;
     }
+
+    html {
+      height: -webkit-fill-available;
+    }
+
 
   @media screen and (max-width: 600px),
          screen and (max-height: 600px) {
